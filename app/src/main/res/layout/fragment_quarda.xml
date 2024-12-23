@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuardaFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ax2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ax\u00B2 + bx + c = 0"
+            android:textAlignment="center"
+            android:textSize="28dp"/>
+
+
+        <!-- Coefficients for quadratic equation -->
+        <EditText
+            android:id="@+id/editTextQuadraticA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:layout_below="@+id/ax2"
+            android:hint="Enter coefficient a"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextQuadraticB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQuadraticA"
+            android:layout_marginTop="20dp"
+            android:hint="Enter coefficient b"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/editTextQuadraticC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQuadraticB"
+            android:layout_marginTop="20dp"
+            android:hint="Enter constant c"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonSolveQuadratic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQuadraticC"
+            android:layout_marginTop="20dp"
+            android:onClick="solveQuadraticEquation"
+            android:backgroundTint="#EE7B2E"
+            android:text="Solve Equation" />
+
+        <!-- Result for quadratic equation -->
+        <TextView
+            android:id="@+id/textViewResultQuadratic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSolveQuadratic"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+
+</FrameLayout>

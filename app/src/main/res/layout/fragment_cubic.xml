@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CubicFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ax3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ax\u00B3 + bx\u00B2 + cx + d = 0"
+            android:textAlignment="center"
+            android:textSize="28dp"/>
+
+        <!-- Coefficients for cubic equation -->
+        <EditText
+            android:id="@+id/editTextA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter coefficient a"
+            android:layout_below="@+id/ax3"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter coefficient b"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_below="@id/editTextA"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter coefficient c"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_below="@id/editTextB"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter coefficient d"
+            android:inputType="numberSigned|numberDecimal"
+            android:layout_below="@id/editTextC"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/buttonSolveCubic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve Equation"
+            android:backgroundTint="#EE7B2E"
+            android:layout_below="@id/editTextD"
+            android:layout_marginTop="20dp"
+            android:onClick="solveCubicEquation"/>
+
+        <!-- Result for cubic equation -->
+        <TextView
+            android:id="@+id/textViewResultCubic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSolveCubic"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

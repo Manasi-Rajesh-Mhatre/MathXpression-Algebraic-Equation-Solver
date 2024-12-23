@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/axb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ax + by = c"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/axb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter two simultaneous equations : "
+        android:layout_below="@id/axb2"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/axb3">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="a"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="b"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="c"/>
+        </TableRow>
+
+        <!-- Equation 1 -->
+        <TableRow>
+            <EditText
+                android:id="@+id/l2CoefficientA1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="A1"
+                android:inputType="numberSigned|numberDecimal"/>
+            <EditText
+                android:id="@+id/l2CoefficientB1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="B1"
+                android:inputType="numberSigned|numberDecimal"/>
+            <EditText
+                android:id="@+id/l2CoefficientC1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="C1"
+                android:inputType="numberSigned|numberDecimal"/>
+        </TableRow>
+
+        <!-- Equation 2 -->
+        <TableRow>
+            <EditText
+                android:id="@+id/l2CoefficientA2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="A2"
+                android:inputType="numberSigned|numberDecimal"/>
+            <EditText
+                android:id="@+id/l2CoefficientB2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="B2"
+                android:inputType="numberSigned|numberDecimal"/>
+            <EditText
+                android:id="@+id/l2CoefficientC2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="C2"
+                android:inputType="numberSigned|numberDecimal"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="270dp">
+
+        <Button
+            android:id="@+id/buttonSolve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:backgroundTint="#EE7B2E"
+            android:textSize="14dp"
+            android:onClick="onSolveButtonClick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="350dp" />
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/axb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ax + b =0"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/editTextCoefficientA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter coefficient (a)"
+        android:layout_below="@id/axb"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCoefficientB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter constant term (b)"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_below="@id/editTextCoefficientA"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSolve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solve"
+        android:onClick="onSolveButtonClick"
+        android:backgroundTint="#EE7B2E"
+        android:textSize="14dp"
+        android:layout_below="@id/editTextCoefficientB"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/buttonSolve"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

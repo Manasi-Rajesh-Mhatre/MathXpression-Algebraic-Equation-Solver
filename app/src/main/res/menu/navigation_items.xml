@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optlinear1"
+        android:title="Linear equation(x)"
+        android:icon="@drawable/ax_removebg_preview"/>
+    <item
+        android:id="@+id/optlinear2"
+        android:title="Linear equation(x,y)"
+        android:icon="@drawable/ax__by_c_removebg_preview" />
+    <item
+        android:id="@+id/optlinear3"
+        android:title="Linear equation(x,y,z)"
+        android:icon="@drawable/ax_byczd_removebg_preview"/>
+    <item
+        android:id="@+id/optQuadra"
+        android:title="Quadratic Equation"
+        android:icon="@drawable/x2_img"
+        />
+    <item
+        android:id="@+id/optCubic"
+        android:title="Cubic Equation"
+        android:icon="@drawable/x3_removebg_preview"
+        />
+
+</menu>
